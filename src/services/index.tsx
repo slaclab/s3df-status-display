@@ -43,7 +43,7 @@ const ServicesSection: NextPage = () => {
                     </div>
                     <div>
                         <p className="text-xs text-gray-400">Last updated</p>
-                        <p className="text-xs text-gray-400 text-end ">{systemStatus?.datetime}</p>
+                        <p className="text-xs text-gray-400 text-end ">{new Date(systemStatus?.datetime).toLocaleString()}</p>
                     </div>
                 </div>
             </div>
